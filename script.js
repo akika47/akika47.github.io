@@ -179,3 +179,67 @@ function DarkAndLightMode(){
     }
 }
 
+
+// Get the modal
+var modal = document.getElementById("myModal1");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+function showAdat20(){
+  var img = document.getElementById("kazand20");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = "delta20adatok.jpg";
+    captionText.innerHTML = this.alt;
+  }
+}
+function showAdat30(){
+  var img = document.getElementById("kazand30");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = "delta30adatok.jpg";
+    captionText.innerHTML = this.alt;
+  }
+}
+function showAdat40(){
+  var img = document.getElementById("kazand40");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = "delta40adatok.jpg";
+    captionText.innerHTML = this.alt;
+  }
+}
+function showAdat70(){
+  var img = document.getElementById("kazand70");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = "delta20adatok.jpg";
+    captionText.innerHTML = this.alt;
+  }
+}
+function showAdat90(){
+  var img = document.getElementById("kazand90");
+  var modalImg = document.getElementById("img01");
+  var captionText = document.getElementById("caption");
+  img.onclick = function(){
+    modal.style.display = "block";
+    modalImg.src = "delta20adatok.jpg";
+    captionText.innerHTML = this.alt;
+  }
+}
+
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
