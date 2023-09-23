@@ -5,10 +5,9 @@ body {
 
 
 .gradientBody{
-  background-image: linear-gradient(-45deg, yellow, orange,darkorange, red);
-  background-size: 400% 1000%;
+  background-image: linear-gradient(to top, yellow, rgb(255, 191, 0), rgb(210, 119, 21), rgb(232, 78, 17));
+  background-size: 400% 550%;
   color: black;
-  animation: gradient 15s ease infinite;
   height: 100vh;
 }
 
@@ -17,18 +16,6 @@ body {
   color: white;
 }
 
-
-@keyframes gradient {
-	0% {
-		background-position: 0% 50%;
-	}
-	50% {
-		background-position: 100% 50%;
-	}
-	100% {
-		background-position: 0% 50%;
-	}
-}
 
 html {
 	scroll-behavior: smooth;
@@ -78,7 +65,7 @@ h1:after {
     width: 150px;
     height: 3px;
     display: inline-block;
-    background-color: red;
+    background-color: rgb(147, 15, 6);
     vertical-align: 0.3em;
     margin: 0 -100%;
 }
