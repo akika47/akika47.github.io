@@ -1,1 +1,180 @@
-Hello World
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <title>Lorem ipsum</title>
+</head>
+
+<body style="background-color: #C4A484;" >
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark fixed-top">
+    <a href="#" class="navbar-brand mb-0">
+      <img src="Logo.jpg" alt="logo" style="border-radius: 50%; width: 100px;" class="d-inline-block align-top">
+    </a>
+    <a class="navbar-brand mb-0"><i class="fa-solid fa-sun fa-2xl" style="color: #f1ea1e;" id="LightOrDarkMode" onclick="DarkAndLightMode()"></i></a>
+    <button type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" class="navbar-toggler" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item dropdown active">
+          <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Nyelv
+          </a>
+          <ul class="dropdown-menu bg-dark" aria-labelledby="navbarDropdown" id="lang-switch">
+            <li><a class="dropdown-item text-white" onclick="changeLanguage('hu')" id="dropdownHun">Magyar</a></li>
+            <li><a class="dropdown-item text-white" onclick="changeLanguage('en')" id="dropdownEng">Angol</a></li>
+          </ul>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link active"></i></a>
+        </li>
+        <li class="navbar-item active">
+          <a href="#sellersHeader" class="nav-link active" id="navbarSellers">Viszonteladók</a>
+        </li>
+        <li class="navbar-item active">
+          <a href="#contactsHeader" class="nav-link active" id="navbarContacts">Elérhetőségek</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container" id="bigContainer">
+    <h1 id="introHeader">Rólunk</h1>
+
+    <p id="introduction">
+      Üdvözöljük az Uniholz KFT. weboldalán!
+
+      Az Uniholz KFT. a megbízhatóság és hosszú élettartam jegyében kínál olcsóbb megoldást az otthon melegéért. Szakértelmünkkel és több mint 25 éves tapasztalatunkkal a vegyes tüzelésű kazánok terén a legkiválóbb minőségű termékeket gyártjuk. A Delta vegyestüzelésű kazánokat kínáljuk, melyekkel a fűtés gondjait a legkisebb befektetéssel és a leggyorsabban oldhatjuk meg.</p>
+
+    <h1 id="boilerHeader">Vegyestüzelésű Kazán Család</h1>
+
+    <p id="Boilers">
+      A Delta vegyestüzelésű kazánok előnyei közé tartoznak a nagyméretű ajtók, amelyek megkönnyítik a kezelhetőséget. Takarékos megoldást kínálunk, hiszen ezek a kazánok nem csak hatékonyan fűtenek, hanem a leeső hamut is hasznosítják a fűtés során. Emellett az esztétikus külső is jellemzi termékeinket, így kazánjaink nem csak hatékonyak, de esztétikusak is a lakásban.
+
+      A különböző típusok közül választhatja a D-28, D-36 és D-48 modelleket, melyek mindegyike kiválóan alkalmazkodik a különböző fűtési igényekhez. A vegyes tüzelésű kazánjainkat szivattyús és gravitációs fűtésre is használhatja, így biztos lehet abban, hogy megtalálja a számára legmegfelelőbb megoldást.
+    </p>
+    <div class="row d-flex justify-content-center">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 img-container">
+        <p class="img-text"><b>D-28</b></p>
+        <img src="kazan1.png" alt="Kazán1" title="Kazán1" class="img-fluid">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 img-container">
+        <p class="img-text"><b>D-36</b></p>
+        <img src="kazan2.png" alt="Kazán2" title="Kazán2" class="img-fluid">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 img-container">
+        <p class="img-text"><b>D-48</b></p>
+        <img src="kazan3.png" alt="Kazán3" title="Kazán3" class="img-fluid">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 img-container">
+        <p class="img-text"><b>D-78</b></p>
+        <img src="kazan4.png" alt="Kazán4" title="Kazán4" class="img-fluid">
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 img-container">
+        <p class="img-text"><b>D-96</b></p>
+        <img src="kazan5.png" alt="Kazán5" title="Kazán5" class="img-fluid">
+      </div>
+    </div>
+    <h1 id="sellersHeader">Hivatalos viszonteladók</h1>
+    <br>
+    <div style="overflow-x:auto;">
+      <table class="center">
+        <tr>
+          <td>­</td>
+          <td><b id="Központitelep">Uniholz Kft. - Központi telep</b></td>
+          <td><b id="Miskolcizelep">Uniholz Kft. - Miskolci telep</b></td>
+          <td><b id="Debrecenitelep">Keletker Vaskereskedés</b></td>
+          <td><b id="Nyíregyházitelep">Nyír-Acél Kft.</b></td>
+          <td><b id="Békéscsabaitelep">Delta-Metál Kft.</b></td>
+          <td><b id="Egritelep">Uniholz Kft. - Egri telep</b></td>
+          <td><b id="Szegeditelep">Hungaroferro Vaskereskedés</b></td>
+        </tr>
+        <tr>
+          <td><b id="locationHeader">Helyszín</b></td>
+          <td>4080 Hajdúnánás, Gohér u. 17.</td>
+          <td>3532 Miskolc, <br> Vasgyári út 41. <br> <b id="behindDAM">(A DAM mögött!)</b></td>
+          <td>4030 Debrecen, Galamb u. 2/b.</td>
+          <td>4405 Nyíregyháza, Tünde u. 10.</td>
+          <td>5600 Békéscsaba, Csorvási u. 25.</td>
+          <td>3300 Eger, <br> Kistályai út 1/A.</td>
+          <td>6728 Szeged, <br> Budapesti út 8.</td>
+        </tr>
+        <tr>
+          <td><b id="mobileHeader">Mobil</b></td>
+          <td>+36-30 819 13 27 / +36-70 88 44 659</td>
+          <td>+36 30 434 0442</td>
+          <td>+36 30 452 00 47</td>
+          <td>+36 30 223 55 37</td>
+          <td>+36 30 267-86-70</td>
+          <td>+36 20 398 7475 / +36 30 866 5923</td>
+          <td>+36 30 746 7554</td>
+        </tr>
+        <tr>
+          <td><b id="emailHeader">E-mail</b></td>
+          <td>info@uniholz.hu</td>
+          <td>miskolcvas@uniholz.hu</td>
+          <td>debrecen@uniholz.hu</td>
+          <td>info@nyir-acel.hu</td>
+          <td>deltametalkft@uniholz.hu</td>
+          <td>egervas@uniholz.hu</td>
+          <td>tornyai.mihaly@uniholz.hu</td>
+        </tr>
+        <tr>
+          <td><b id="openingHeader">Nyitva tartás</b></td>
+          <td id="centralOpening">H-P: 07:30 - 16:00</td>
+          <td><span id="miskolcOpening">H-Cs: 07:30 - 16:00</span> <br> <span id="miskolcPentek">P: 07:30 - 14:00</span> <br> <span id="miskolcSzombat" >Szo: 07:30 - 11:30</span></td>
+          <td><span id="debrecenOpening">H-P: 8:00 - 16:00</span> <br> <span id="debrecenSzombat">Szo: 8:00 - 12:00</span></td>
+          <td><span id="nyirOpening">H-P: 8:00 - 16:30</span> <br><span id="nyirSzombat">Szo: 8:00 - 12:00</span></td>
+          <td><span id="bekesOpening">H-CS: 7:30 - 16:00</span> <br><span id="bekesPentek">P: 7:30 - 15:30</span></td>
+          <td><span id="egerOpening">H-Cs: 7:30 - 16:00</span> <br><span id="egerPentek">P: 7:30 - 15:00</span></td>
+          <td><span id="szegedOpening">H-CS: 7:30 - 16:00</span> <br><span id="szegedPentek">P: 7:30 - 15:30</span></td>
+        </tr>
+      </table>
+    </div>
+
+    <h1 id="contactsHeader">Elérhetőségek</h1>
+
+    <p>
+      <span id="contactsFirst">A Delta Metál KFT. büszkén gyártja termékeinket Békéscsabán, a Csorvási út 25. szám alatt található telephelyünkön. Vásárlóink elégedettsége érdekében minden termékünkre 2 év garanciát vállalunk. Ha bármilyen kérdése van, vagy szeretne megrendelést leadni, kérjük, lépjen kapcsolatba velünk a következő elérhetőségeinken: </span>
+      
+      <br><b id="contactsMobile">Mobil:</b> <u>06-30-267-8670</u> <b>E-mail:</b> <u>deltametalkft@gmail.com</u> <br>
+      
+      <span id="contactsLast">Kollégáink készséggel állnak rendelkezésére a legjobb tanácsokkal és segítséggel. Várjuk Önt szeretettel az Uniholz KFT. csapatában, hogy segítsük otthona melege és kényelme érdekében! </span>
+    </p>
+
+
+
+
+  </div>
+  <div class="footer">
+    <p>&copy; 2020 Delta Metál Kft. All rights reserved.</p>
+</div>
+
+
+
+  
+  <script src="script.js"></script>
+
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+  <script src="jquery.fittext.js"></script>
+  <script>
+    $("#introHeader").fitText(1.8);
+    $("#boilerHeader").fitText(1.8);
+    $("#sellersHeader").fitText(1.8);
+    $("#contactsHeader").fitText(1.8);
+  </script>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+</body>
+
+</html>
