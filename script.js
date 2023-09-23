@@ -164,22 +164,17 @@ var language = {
   
 changeLanguage("hu");
 
-
-
 let SunOrMoon = true;
 function DarkAndLightMode(){
     let icon = document.getElementById("LightOrDarkMode");
-
     if (SunOrMoon == true) {
         icon.className = "fa-solid fa-moon fa-2xl";
-        document.body.style.backgroundColor = "#303133";
-        document.body.style.color = "white";
+        document.body.className = "blackBody";
         SunOrMoon = false;   
     }
     else{
         icon.className = "fa-solid fa-sun fa-2xl";
-        document.body.style.backgroundColor = "#C4A484";
-        document.body.style.color = "black";
+        document.body.className = "gradientBody";
         SunOrMoon = true;
     }
 }
