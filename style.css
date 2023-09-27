@@ -5,7 +5,7 @@ body {
 
 
 .gradientBody{
-  background-image: linear-gradient(to top, yellow, rgb(255, 191, 0), rgb(210, 119, 21), rgb(145, 38, 9));
+  background-image: linear-gradient(to top, yellow, rgb(255, 191, 0), rgb(196, 108, 14), rgb(179, 27, 7));
   background-size: 400% 550%;
   color: black;
   height: 100vh;
@@ -50,11 +50,13 @@ img{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 100px; /* Location of the box */
+  padding-top: 50px;
+  padding-bottom: 60px; /* Location of the box */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
   height: 100%; /* Full height */
+
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
@@ -62,12 +64,13 @@ img{
 
 /* Modal Content (Image) */
 .modal-content {
-  margin: auto;
+
+  margin-left: auto;
+  margin-right: auto;
   display: block;
-  width: 80%;
-  max-width: 700px;
-  height: 98%;
-  object-fit:cover;
+  object-fit: contain;
+  width: 10vw;
+  height: 100%;
 
 }
 
@@ -96,10 +99,12 @@ img{
 
 /* The Close Button */
 .close {
+  z-index: 99;
   position: absolute;
-  top: 15px;
-  right: 35px;
+  top: 70px;
+  right: 15px;
   color: white;
+
   font-size: 40px;
   font-weight: bold;
   transition: 0.3s;
@@ -192,7 +197,7 @@ td{
     font-size: 14px;
     color: #f8f8f8;
     margin-top: auto;
-    width: 102%;
+    width: 100%;
     box-sizing: border-box;
     height: 22px;
   }
@@ -230,5 +235,17 @@ td{
   div::-webkit-scrollbar-thumb:hover {
     background: grey;
   }
+.kazanok{
+  -webkit-transition-property: all; 
+  -webkit-transition-duration: 3s; 
+  -webkit-transition-timing-function: ease; 
+  transition-property: all; 
+  transition-duration: 3s; 
+  transition-timing-function: ease; 
+}
 
 
+.kazanok:hover{
+
+  transform: scale(1.1); 
+}

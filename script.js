@@ -50,6 +50,7 @@ var language = {
       contactsFirst: "Delta Metál KFT. proudly manufactures our products in Békéscsaba, at our site at Csorvási út 25. For the satisfaction of our customers, we offer a 2-year warranty on all our products. If you have any questions or would like to place an order, please contact us at the following contact details:",
       contactsMobile: "Mobile:",
       contactsLast: "Our colleagues are ready to provide you with the best advice and help. We warmly welcome you at Uniholz ​​KFT. in your team to help ensure the warmth and comfort of your home!",
+      closeButton: "Close"
     },
     hu: {
       dropdownHun: "Magyar",
@@ -102,7 +103,7 @@ var language = {
       contactsFirst: "A Delta Metál KFT. büszkén gyártja termékeinket Békéscsabán, a Csorvási út 25. szám alatt található telephelyünkön. Vásárlóink elégedettsége érdekében minden termékünkre 2 év garanciát vállalunk. Ha bármilyen kérdése van, vagy szeretne megrendelést leadni, kérjük, lépjen kapcsolatba velünk a következő elérhetőségeinken:",
       contactsMobile: "Mobil:",
       contactsLast: "Kollégáink készséggel állnak rendelkezésére a legjobb tanácsokkal és segítséggel. Várjuk Önt szeretettel az Uniholz KFT. csapatában, hogy segítsük otthona melege és kényelme érdekében!",
-      
+      closeButton: "Bezár"
     }
   };
   
@@ -159,6 +160,7 @@ var language = {
     contactsFirst.innerText = language[lang].contactsFirst;
     contactsMobile.innerText = language[lang].contactsMobile;
     contactsLast.innerText = language[lang].contactsLast;
+    closeButton.innerText = language[lang].closeButton;
 
   }
   
