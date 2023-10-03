@@ -189,51 +189,56 @@ var modal = document.getElementById("myModal1");
 function showAdat20(){
   var img = document.getElementById("kazand20");
   var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
+  var modalText = document.getElementById("popupText");
   img.onclick = function(){
+    modalImg.classList.add("modal-content");
     modal.style.display = "block";
     modalImg.src = "delta20adatok.jpg";
-    captionText.innerHTML = this.alt;
+    modalText.innerText = "";
   }
 }
 function showAdat30(){
   var img = document.getElementById("kazand30");
   var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
+  var modalText = document.getElementById("popupText");
   img.onclick = function(){
+    modalImg.classList.add("modal-content");
     modal.style.display = "block";
     modalImg.src = "delta30adatok.jpg";
-    captionText.innerHTML = this.alt;
+    modalText.innerText = "";
   }
 }
 function showAdat40(){
   var img = document.getElementById("kazand40");
   var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
+  var modalText = document.getElementById("popupText");
   img.onclick = function(){
+    modalImg.classList.add("modal-content");   
     modal.style.display = "block";
     modalImg.src = "delta40adatok.jpg";
-    captionText.innerHTML = this.alt;
+    modalText.innerText = "";
   }
 }
 function showAdat70(){
   var img = document.getElementById("kazand70");
+  var modalText = document.getElementById("popupText");
   var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
   img.onclick = function(){
+    modalImg.classList.remove("modal-content"); 
+    modalImg.src = "";
     modal.style.display = "block";
-    modalImg.src = "delta20adatok.jpg";
-    captionText.innerHTML = this.alt;
+    modalText.innerText = "Csak egyéni megrendelésre kapható! Kérjük hívj vagy írj rá hivatalos címeinkre a részletekért!";
   }
 }
 function showAdat90(){
   var img = document.getElementById("kazand90");
+  var modalText = document.getElementById("popupText");
   var modalImg = document.getElementById("img01");
-  var captionText = document.getElementById("caption");
   img.onclick = function(){
+    modalImg.classList.remove("modal-content");
+    modalImg.src = "";
     modal.style.display = "block";
-    modalImg.src = "delta20adatok.jpg";
-    captionText.innerHTML = this.alt;
+    modalText.innerText = "Csak egyéni megrendelésre kapható! Kérjük hívj vagy írj rá hivatalos címeinkre a részletekért!";
   }
 }
 
