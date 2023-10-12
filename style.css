@@ -5,7 +5,7 @@ body {
 
 
 .gradientBody{
-  background-image: linear-gradient(to top, rgb(233, 233, 69), rgb(245, 203, 78), rgb(236, 51, 45));
+  background-image: linear-gradient(to top, rgba(233, 233, 69, 0.858), rgba(233, 188, 50, 0.803), rgba(217, 24, 17, 0.836));
   background-size: 400% 550%;
   color: black;
   height: 100vh;
@@ -151,6 +151,11 @@ h1 {
     margin: 500px 0px;
     
 }
+#warrant{
+  text-align: center;
+  font-size: 40px;
+  font-weight: bold;
+}
 
 h1:before,
 h1:after {
@@ -266,6 +271,7 @@ td{
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  cursor: pointer;
 }
 
 .fa-regular:hover {
@@ -274,4 +280,24 @@ td{
 
 #imageContainer1, #imageContainer2, #imageContainer3, #imageContainer4, #imageContainer5 {
   position: relative;
+}
+
+.kazanAr{
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
+	animation: pulse 2s infinite;
+  border-radius: 15px;
+}
+
+@keyframes pulse {
+	0% {
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70% {
+		box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+	}
+
+	100% {  
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
 }
