@@ -230,7 +230,7 @@ td{
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: rgb(0, 255, 234);
+    background: rgba(9, 229, 68, 0.653);
     border-radius: 15px;
   }
     /* Overriding */
@@ -241,7 +241,7 @@ td{
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: rgb(0, 201, 184);
+    background: rgb(237, 158, 11);
   }
     /* Overriding */
   div::-webkit-scrollbar-thumb:hover {
@@ -284,8 +284,12 @@ td{
 
 .kazanAr{
   box-shadow: 0 0 0 0 rgba(0, 0, 0, 1);
-	animation: pulse 2s infinite;
+
   border-radius: 15px;
+}
+
+.kazanAr:hover{
+	animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
