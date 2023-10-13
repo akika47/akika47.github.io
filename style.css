@@ -1,6 +1,7 @@
 body {
     margin: 0;
     padding: 0;
+    height: 100%;
 }
 
 
@@ -263,14 +264,27 @@ td{
 }
 
 .icon {
+
   color: white;
   font-size: 20px;
   position: absolute; 
-  top:91%; 
-  left:91%; 
+  top:94%; 
+  left:92%; 
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  cursor: pointer;
+}
+
+.iconText{
+  color: white;
+  font-size: 18px;
+  position: absolute; 
+  top:94%; 
+  left:72%; 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 200px;
   cursor: pointer;
 }
 

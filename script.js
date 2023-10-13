@@ -8,8 +8,16 @@ var language = {
     introHeader: "About us",
     introduction: "Welcome to Uniholz ​​​​KFT. on your website! Uniholz ​​KFT. in the name of reliability and longevity, we offer a cheaper solution for heating the home. With our expertise and more than 25 years of experience in the field of mixed-fired boilers, we produce the highest and annual quality. We offer Delta mixed fuel boilers, with which we can solve heating problems with the smallest investment and the fastest.",
     boilerHeader: "Combustion Boiler Family",
-    Boilers: "The advantages of Delta mixed-fuel boilers include large doors that facilitate handling. We offer an economical solution, as these boilers not only heat efficiently, but also utilize the ash that falls during heating. In addition, our products are also characterized by their aesthetic appearance, so our boilers are not only efficient, but also aesthetically pleasing in the home. Among the different types, you can choose the D-28, D-36 and D-48 models, all of which are perfectly adapted to different heating needs. You can use our mixed fuel boilers for both pump and gravity heating, so you can be sure that you will find the most suitable solution for you.",
+    Boilers: "The advantages of Delta mixed-fuel boilers include large doors that facilitate handling. We offer an economical solution, as these boilers not only heat efficiently, but also utilize the ash that falls during heating. In addition, our products are also characterized by their aesthetic appearance, so our boilers are not only efficient, but also aesthetically pleasing in the home. Among the different types, you can choose the D-20, D-30 and D-40 models, all of which are perfectly adapted to different heating needs. You can use our mixed fuel boilers for both pump and gravity heating, so you can be sure that you will find the most suitable solution for you.",
     warrant: "We offer a 3-year warranty on boilers!",
+    egyedar1:"Invidual pricing based on offers!",
+    egyedar2:"Invidual pricing based on offers!",
+    adatlap1:"Data sheet and dimensions",
+    adatlap2:"Data sheet and dimensions",
+    adatlap3:"Data sheet and dimensions",
+    adatlap4:"Data sheet and dimensions",
+    adatlap5:"Data sheet and dimensions",
+
     sellersHeader: "Official resellers",
 
     Központitelep: "Uniholz Kft. - Central site",
@@ -48,7 +56,7 @@ var language = {
 
     contactsHeader: "Contacts",
 
-    contactsFirst: "Delta Metál KFT. proudly manufactures our products in Békéscsaba, at our site at Csorvási út 25. For the satisfaction of our customers, we offer a 2-year warranty on all our products. If you have any questions or would like to place an order, please contact us at the following contact details:",
+    contactsFirst: "Delta Metál KFT. proudly manufactures our products in Békéscsaba, at our site at Csorvási út 25. For the satisfaction of our customers, we offer a 3-year warranty on all our products. If you have any questions or would like to place an order, please contact us at the following contact details:",
     contactsMobile: "Mobile:",
     contactsLast: "Our colleagues are ready to provide you with the best advice and help. We warmly welcome you at Uniholz ​​KFT. in your team to help ensure the warmth and comfort of your home!",
     closeButton: "Close"
@@ -62,8 +70,16 @@ var language = {
     introHeader: "Rólunk",
     introduction: "Üdvözöljük az Uniholz KFT. weboldalán! Az Uniholz KFT. a megbízhatóság és hosszú élettartam jegyében kínál olcsóbb megoldást az otthon melegéért. Szakértelmünkkel és több mint 25 éves tapasztalatunkkal a vegyes tüzelésű kazánok terén a legkiválóbb minőségű termékeket gyártjuk. A Delta vegyestüzelésű kazánokat kínáljuk, melyekkel a fűtés gondjait a legkisebb befektetéssel és a leggyorsabban oldhatjuk meg.",
     boilerHeader: "Vegyestüzelésű Kazán Család",
-    Boilers: "A Delta vegyestüzelésű kazánok előnyei közé tartoznak a nagyméretű ajtók, amelyek megkönnyítik a kezelhetőséget. Takarékos megoldást kínálunk, hiszen ezek a kazánok nem csak hatékonyan fűtenek, hanem a leeső hamut is hasznosítják a fűtés során. Emellett az esztétikus külső is jellemzi termékeinket, így kazánjaink nem csak hatékonyak, de esztétikusak is a lakásban. A különböző típusok közül választhatja a D-28, D-36 és D-48 modelleket, melyek mindegyike kiválóan alkalmazkodik a különböző fűtési igényekhez. A vegyes tüzelésű kazánjainkat szivattyús és gravitációs fűtésre is használhatja, így biztos lehet abban, hogy megtalálja a számára legmegfelelőbb megoldást.",
+    Boilers: "A Delta vegyestüzelésű kazánok előnyei közé tartoznak a nagyméretű ajtók, amelyek megkönnyítik a kezelhetőséget. Takarékos megoldást kínálunk, hiszen ezek a kazánok nem csak hatékonyan fűtenek, hanem a leeső hamut is hasznosítják a fűtés során. Emellett az esztétikus külső is jellemzi termékeinket, így kazánjaink nem csak hatékonyak, de esztétikusak is a lakásban. A különböző típusok közül választhatja a D-20, D-30 és D-40 modelleket, melyek mindegyike kiválóan alkalmazkodik a különböző fűtési igényekhez. A vegyes tüzelésű kazánjainkat szivattyús és gravitációs fűtésre is használhatja, így biztos lehet abban, hogy megtalálja a számára legmegfelelőbb megoldást.",
     warrant:"A Kazánokra 3 év garanciát vállalunk!",
+    egyedar1:"Egyedi árazás árajánlat alapján!",
+    egyedar2:"Egyedi árazás árajánlat alapján!",
+    adatlap1:"Adatlap és méretek",
+    adatlap2:"Adatlap és méretek",
+    adatlap3:"Adatlap és méretek",
+    adatlap4:"Adatlap és méretek",
+    adatlap5:"Adatlap és méretek",
+
     sellersHeader: "Hivatalos viszonteladók",
 
     Központitelep: "Uniholz Kft. - Központi telep",
@@ -102,7 +118,7 @@ var language = {
 
     contactsHeader: "Elérhetőségek",
 
-    contactsFirst: "A Delta Metál KFT. büszkén gyártja termékeinket Békéscsabán, a Csorvási út 25. szám alatt található telephelyünkön. Vásárlóink elégedettsége érdekében minden termékünkre 2 év garanciát vállalunk. Ha bármilyen kérdése van, vagy szeretne megrendelést leadni, kérjük, lépjen kapcsolatba velünk a következő elérhetőségeinken:",
+    contactsFirst: "A Delta Metál KFT. büszkén gyártja termékeinket Békéscsabán, a Csorvási út 25. szám alatt található telephelyünkön. Vásárlóink elégedettsége érdekében minden termékünkre 3 év garanciát vállalunk. Ha bármilyen kérdése van, vagy szeretne megrendelést leadni, kérjük, lépjen kapcsolatba velünk a következő elérhetőségeinken:",
     contactsMobile: "Mobil:",
     contactsLast: "Kollégáink készséggel állnak rendelkezésére a legjobb tanácsokkal és segítséggel. Várjuk Önt szeretettel az Uniholz KFT. csapatában, hogy segítsük otthona melege és kényelme érdekében!",
     closeButton: "Bezár"
@@ -163,6 +179,17 @@ function changeLanguage(lang) {
   contactsMobile.innerText = language[lang].contactsMobile;
   contactsLast.innerText = language[lang].contactsLast;
   closeButton.innerText = language[lang].closeButton;
+  warrant.innerText = language[lang].warrant;
+  egyedar1.innerText = language[lang].egyedar1;
+  egyedar2.innerText = language[lang].egyedar2;
+  
+  adatlap1.innerText = language[lang].adatlap1;
+  adatlap2.innerText = language[lang].adatlap2;
+  adatlap3.innerText = language[lang].adatlap3;
+  adatlap4.innerText = language[lang].adatlap4;
+  adatlap5.innerText = language[lang].adatlap5;
+
+  
 
 }
 
