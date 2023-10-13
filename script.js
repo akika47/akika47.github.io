@@ -34,7 +34,7 @@ var language = {
     emailHeader: "E-mail",
     openingHeader: "Opening hours",
     behindDAM: "(Behind the DAM)",
-    Kistárcsatelep:"Kistárcsa(Soon)",
+    Kistarcsatelep:"Kistarcsa(Soon)",
 
     centralOpening: "Mon-Fri: 07:30 - 16:00",
 
@@ -99,7 +99,7 @@ var language = {
     emailHeader: "E-mail",
     openingHeader: "Nyitva tartás",
     behindDAM: "(A DAM mögött!)",
-    Kistárcsatelep:"Kistárcsa(Hamarosan)",
+    Kistarcsatelep:"Kistarcsa(Hamarosan)",
 
     centralOpening: "H-P: 07:30 - 16:00",
 
@@ -159,7 +159,7 @@ function changeLanguage(lang) {
   emailHeader.innerText = language[lang].emailHeader;
   openingHeader.innerText = language[lang].openingHeader;
   behindDAM.innerText = language[lang].behindDAM;
-  Kistárcsatelep.innerText = language[lang].Kistárcsatelep;
+  Kistarcsatelep.innerText = language[lang].Kistarcsatelep;
 
   centralOpening.innerText = language[lang].centralOpening;
 
