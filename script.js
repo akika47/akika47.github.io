@@ -189,8 +189,18 @@ function changeLanguage(lang) {
   adatlap4.innerText = language[lang].adatlap4;
   adatlap5.innerText = language[lang].adatlap5;
 
-  
+  let iText = document.querySelectorAll(".iconText");
+  if (lang == "hu") {
 
+    for(let i = 0; i < iText.length; i++) {    
+      iText[i].style.width = '220px';
+    }
+  }
+  else{
+    for(let i = 0; i < iText.length; i++) {    
+      iText[i].style.width = '330px';
+    }
+  }
 }
 
 changeLanguage("hu");
