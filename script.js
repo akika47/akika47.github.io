@@ -6,7 +6,9 @@ var language = {
     navbarSellers: "Resellers",
     navbarContacts: "Contacts",
     introHeader: "About us",
-    introduction: "Welcome to Uniholz ​​​​KFT. on your website! Uniholz ​​KFT. in the name of reliability and longevity, we offer a cheaper solution for heating the home. With our expertise and more than 25 years of experience in the field of mixed-fired boilers, we produce the highest and annual quality. We offer Delta mixed fuel boilers, with which we can solve heating problems with the smallest investment and the fastest.",
+    introStart: "Welcome to Uniholz ​​​​KFT. on your website! Uniholz ​​KFT. in the name of reliability and longevity, we offer a cheaper solution for heating the home. With our expertise and ", 
+    kiemelt25ev:"more than 25 years of experience in the field of mixed-fired boilers",
+    introEnd:", we produce the highest and annual quality. We offer Delta mixed fuel boilers, with which we can solve heating problems with the smallest investment and the fastest.",
     boilerHeader: "Combustion Boiler Family",
     Boilers: "The advantages of Delta mixed-fuel boilers include large doors that facilitate handling. We offer an economical solution, as these boilers not only heat efficiently, but also utilize the ash that falls during heating. In addition, our products are also characterized by their aesthetic appearance, so our boilers are not only efficient, but also aesthetically pleasing in the home. Among the different types, you can choose the D-20, D-30 and D-40 models, all of which are perfectly adapted to different heating needs. You can use our mixed fuel boilers for both pump and gravity heating, so you can be sure that you will find the most suitable solution for you.",
     warrant: "We offer a 3-year warranty on boilers!",
@@ -32,6 +34,7 @@ var language = {
     emailHeader: "E-mail",
     openingHeader: "Opening hours",
     behindDAM: "(Behind the DAM)",
+    Kistárcsatelep:"Kistárcsa(Soon)",
 
     centralOpening: "Mon-Fri: 07:30 - 16:00",
 
@@ -68,7 +71,9 @@ var language = {
     navbarSellers: "Viszonteladók",
     navbarContacts: "Elérhetőségek",
     introHeader: "Rólunk",
-    introduction: "Üdvözöljük az Uniholz KFT. weboldalán! Az Uniholz KFT. a megbízhatóság és hosszú élettartam jegyében kínál olcsóbb megoldást az otthon melegéért. Szakértelmünkkel és több mint 25 éves tapasztalatunkkal a vegyes tüzelésű kazánok terén a legkiválóbb minőségű termékeket gyártjuk. A Delta vegyestüzelésű kazánokat kínáljuk, melyekkel a fűtés gondjait a legkisebb befektetéssel és a leggyorsabban oldhatjuk meg.",
+    introStart: "Üdvözöljük az Uniholz KFT. weboldalán! Az Uniholz KFT. a megbízhatóság és hosszú élettartam jegyében kínál olcsóbb megoldást az otthon melegéért. Szakértelmünkkel és ",
+    kiemelt25ev:" több mint 25 éves tapasztalatunkkal a vegyes tüzelésű kazánok terén a legkiválóbb minőségű termékeket gyártjuk.",
+    introEnd:"A Delta vegyestüzelésű kazánokat kínáljuk, melyekkel a fűtés gondjait a legkisebb befektetéssel és a leggyorsabban oldhatjuk meg.",
     boilerHeader: "Vegyestüzelésű Kazán Család",
     Boilers: "A Delta vegyestüzelésű kazánok előnyei közé tartoznak a nagyméretű ajtók, amelyek megkönnyítik a kezelhetőséget. Takarékos megoldást kínálunk, hiszen ezek a kazánok nem csak hatékonyan fűtenek, hanem a leeső hamut is hasznosítják a fűtés során. Emellett az esztétikus külső is jellemzi termékeinket, így kazánjaink nem csak hatékonyak, de esztétikusak is a lakásban. A különböző típusok közül választhatja a D-20, D-30 és D-40 modelleket, melyek mindegyike kiválóan alkalmazkodik a különböző fűtési igényekhez. A vegyes tüzelésű kazánjainkat szivattyús és gravitációs fűtésre is használhatja, így biztos lehet abban, hogy megtalálja a számára legmegfelelőbb megoldást.",
     warrant:"A Kazánokra 3 év garanciát vállalunk!",
@@ -94,6 +99,7 @@ var language = {
     emailHeader: "E-mail",
     openingHeader: "Nyitva tartás",
     behindDAM: "(A DAM mögött!)",
+    Kistárcsatelep:"Kistárcsa(Hamarosan)",
 
     centralOpening: "H-P: 07:30 - 16:00",
 
@@ -133,7 +139,9 @@ function changeLanguage(lang) {
   navbarSellers.innerText = language[lang].navbarSellers;
   navbarContacts.innerText = language[lang].navbarContacts;
   introHeader.innerText = language[lang].introHeader;
-  introduction.innerText = language[lang].introduction;
+  introStart.innerText = language[lang].introStart;
+  kiemelt25ev.innerText = language[lang].kiemelt25ev;
+  introEnd.innerText = language[lang].introEnd;
   boilerHeader.innerText = language[lang].boilerHeader;
   Boilers.innerText = language[lang].Boilers;
   sellersHeader.innerText = language[lang].sellersHeader;
@@ -151,6 +159,7 @@ function changeLanguage(lang) {
   emailHeader.innerText = language[lang].emailHeader;
   openingHeader.innerText = language[lang].openingHeader;
   behindDAM.innerText = language[lang].behindDAM;
+  Kistárcsatelep.innerText = language[lang].Kistárcsatelep;
 
   centralOpening.innerText = language[lang].centralOpening;
 
@@ -198,7 +207,7 @@ function changeLanguage(lang) {
   }
   else{
     for(let i = 0; i < iText.length; i++) {    
-      iText[i].style.width = '330px';
+      iText[i].style.width = '335px';
     }
   }
 }
@@ -208,14 +217,21 @@ changeLanguage("hu");
 let SunOrMoon = true;
 function DarkAndLightMode() {
   let icon = document.getElementById("LightOrDarkMode");
+  let iText = document.querySelectorAll(".iconText");
   if (SunOrMoon == true) {
     icon.className = "fa-solid fa-moon fa-2xl";
     document.body.className = "blackBody";
+    for(let i = 0; i < iText.length; i++) {    
+      iText[i].style.color = 'white';
+    }
     SunOrMoon = false;
   }
   else {
     icon.className = "fa-solid fa-sun fa-2xl";
     document.body.className = "gradientBody";
+    for(let i = 0; i < iText.length; i++) {    
+      iText[i].style.color = 'black';
+    }
     SunOrMoon = true;
   }
 }
