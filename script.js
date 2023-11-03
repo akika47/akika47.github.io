@@ -20,6 +20,14 @@ var language = {
     adatlap4:"Data sheet and dimensions",
     adatlap5:"Data sheet and dimensions",
 
+    energiaoszt1: "Energy Rating : A+",
+    energiaoszt2: "Energy Rating : A+",
+    energiaoszt3: "Energy Rating : A+",
+    energiaoszt4: "Energy Rating : A+",
+    energiaoszt5: "Energy Rating : A+",
+
+    pdfLoader: "Inspection report, expert opinion",
+
     sellersHeader: "Official resellers",
 
     Központitelep: "Uniholz Kft. - Central site",
@@ -59,7 +67,7 @@ var language = {
 
     contactsHeader: "Contacts",
 
-    contactsFirst: "Delta Metál KFT. proudly manufactures our products in Békéscsaba, at our site at Csorvási út 25. For the satisfaction of our customers, we offer a 3-year warranty on all our products. If you have any questions or would like to place an order, please contact us at the following contact details:",
+    contactsFirst: "Uniholz KFT. proudly manufactures our products in Békéscsaba, at our site at Csorvási út 25. For the satisfaction of our customers, we offer a 3-year warranty on all our products. If you have any questions or would like to place an order, please contact us at the following contact details:",
     contactsMobile: "Mobile:",
     contactsLast: "Our colleagues are ready to provide you with the best advice and help. We warmly welcome you at Uniholz ​​KFT. in your team to help ensure the warmth and comfort of your home!",
     closeButton: "Close"
@@ -84,6 +92,14 @@ var language = {
     adatlap3:"Adatlap és méretek",
     adatlap4:"Adatlap és méretek",
     adatlap5:"Adatlap és méretek",
+
+    energiaoszt1: "Energia Osztály : A+",
+    energiaoszt2: "Energia Osztály : A+",
+    energiaoszt3: "Energia Osztály : A+",
+    energiaoszt4: "Energia Osztály : A+",
+    energiaoszt5: "Energia Osztály : A+",
+
+    pdfLoader: "Bevizsgálási jegyzőkönyv , szakvélemény",
 
     sellersHeader: "Hivatalos viszonteladók",
 
@@ -124,7 +140,7 @@ var language = {
 
     contactsHeader: "Elérhetőségek",
 
-    contactsFirst: "A Delta Metál KFT. büszkén gyártja termékeinket Békéscsabán, a Csorvási út 25. szám alatt található telephelyünkön. Vásárlóink elégedettsége érdekében minden termékünkre 3 év garanciát vállalunk. Ha bármilyen kérdése van, vagy szeretne megrendelést leadni, kérjük, lépjen kapcsolatba velünk a következő elérhetőségeinken:",
+    contactsFirst: "A Uniholz KFT. büszkén gyártja termékeinket Békéscsabán, a Csorvási út 25. szám alatt található telephelyünkön. Vásárlóink elégedettsége érdekében minden termékünkre 3 év garanciát vállalunk. Ha bármilyen kérdése van, vagy szeretne megrendelést leadni, kérjük, lépjen kapcsolatba velünk a következő elérhetőségeinken:",
     contactsMobile: "Mobil:",
     contactsLast: "Kollégáink készséggel állnak rendelkezésére a legjobb tanácsokkal és segítséggel. Várjuk Önt szeretettel az Uniholz KFT. csapatában, hogy segítsük otthona melege és kényelme érdekében!",
     closeButton: "Bezár"
@@ -198,6 +214,14 @@ function changeLanguage(lang) {
   adatlap4.innerText = language[lang].adatlap4;
   adatlap5.innerText = language[lang].adatlap5;
 
+  energiaoszt1.innerText = language[lang].energiaoszt1;
+  energiaoszt2.innerText = language[lang].energiaoszt2;
+  energiaoszt3.innerText = language[lang].energiaoszt3;
+  energiaoszt4.innerText = language[lang].energiaoszt4;
+  energiaoszt5.innerText = language[lang].energiaoszt5;
+
+  pdfLoader.innerText = language[lang].pdfLoader;
+
   let iText = document.querySelectorAll(".iconText");
   if (lang == "hu") {
 
@@ -218,19 +242,31 @@ let SunOrMoon = true;
 function DarkAndLightMode() {
   let icon = document.getElementById("LightOrDarkMode");
   let iText = document.querySelectorAll(".iconText");
+  let eText = document.querySelectorAll(".energText");
+  let button = document.getElementById("pdfLoader");
   if (SunOrMoon == true) {
     icon.className = "fa-solid fa-moon fa-2xl";
     document.body.className = "blackBody";
+    pdfLoader.style.backgroundColor = 'black';
+    pdfLoader.style.color = 'white';
     for(let i = 0; i < iText.length; i++) {    
       iText[i].style.color = 'white';
+    }
+    for(let i = 0; i < eText.length; i++) {    
+      eText[i].style.color = 'white';
     }
     SunOrMoon = false;
   }
   else {
     icon.className = "fa-solid fa-sun fa-2xl";
     document.body.className = "gradientBody";
+    pdfLoader.style.backgroundColor = 'rgba(233, 233, 69, 0.911)';
+    pdfLoader.style.color = 'black';
     for(let i = 0; i < iText.length; i++) {    
       iText[i].style.color = 'black';
+    }
+    for(let i = 0; i < eText.length; i++) {    
+      eText[i].style.color = 'black';
     }
     SunOrMoon = true;
   }
@@ -296,4 +332,20 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks on <span> (x), close the modal
 span.onclick = function () {
   modal.style.display = "none";
+}
+
+let pdfLoaded = false;
+let loadPdf = () =>{
+  let button = document.getElementById("pdfLoader");
+  let pdf = document.getElementById("pdf");
+  if (pdfLoaded == false) {
+    button.innerHTML = 'X';
+    pdf.style.display = 'block';
+    pdfLoaded = true;
+  }
+  else{
+    button.innerHTML = 'Bevizsgálási jegyzőkönyv , szakvélemény';
+    pdf.style.display = 'none';
+    pdfLoaded = false;
+  }
 }

@@ -1,15 +1,15 @@
 body {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     height: 100%;
 }
 
 
 .gradientBody{
-  background-image: linear-gradient(to top, rgba(233, 233, 69, 0.858), rgba(233, 188, 50, 0.803), rgba(217, 24, 17, 0.836));
-  background-size: 400% 550%;
+  background-image: linear-gradient(to top, rgba(233, 233, 69, 0.788), rgba(214, 162, 18, 0.788),  rgba(231, 124, 37, 0.803), rgba(212, 22, 16, 0.836));
   color: black;
-  height: 100vh;
+  min-height: 100%;
 }
 
 .blackBody{
@@ -190,7 +190,9 @@ td{
 }
 
 .img-container img {
+    min-width: 320px;
     max-width: 100%;
+    max-height: 420px;
     border: solid 2px black;
   }
 
@@ -264,29 +266,65 @@ td{
 }
 
 .icon {
-
   color: white;
   font-size: 20px;
   position: absolute; 
-  top:94%; 
-  left:92%; 
+  top:95.7%; 
+  left:80%; 
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
   cursor: pointer;
+  z-index: 100;
 }
 
 .iconText{
   color: black;
   font-size: 20px;
   position: absolute; 
-  top:94%; 
-  left:70%; 
+  top:95.7%; 
+  left:58%; 
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   width: 220px;
   cursor: pointer;
+  z-index: 100;
 }
+
+.energText{
+  color: black;
+  font-size: 20px;
+  position: absolute; 
+  top:25%; 
+  left: 40%; 
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  width: 220px;
+  cursor: pointer;
+  z-index: 100;
+}
+#energiaoszt4, #energiaoszt5{
+  top:38%; 
+  left: 40%; 
+}
+
+@media only all and (max-width: 280px) {
+  .energText{left: 50%;} 
+  #energiaoszt4, #energiaoszt5{
+    top:45%; 
+    left: 50%; 
+  }
+}
+
+@media only all and (max-width: 1094px) {
+  .energText{left: 51%;} 
+  #energiaoszt4, #energiaoszt5{
+    top:45%; 
+    left: 50%; 
+  }
+}
+
+
 
 .fa-regular:hover {
   color: #eee;
@@ -324,4 +362,26 @@ td{
 	100% {  
 		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
 	}
+}
+
+#pdfContainer{
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+#pdfLoader{
+  cursor: pointer;
+  text-align: center;
+  background-color: rgba(233, 233, 69, 0.911);
+  color: black;
+  border-radius: 7px;
+
+}
+
+#pdf{
+  margin-top: 10px;
+  display: none;
+  z-index: 1000;
 }
